@@ -1,0 +1,1 @@
+# prez-custom-sonar-eslint-rules

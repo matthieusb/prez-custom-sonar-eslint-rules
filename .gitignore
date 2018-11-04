@@ -1,4 +1,7 @@
+# Maven
+target/
 
 # Jetbrains file
 .idea
 Supprimerait .gitignore
+Supprimerait sonar/java-custom-rules/

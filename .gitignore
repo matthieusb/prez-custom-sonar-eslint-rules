@@ -9,5 +9,8 @@ target/
 # Jetbrains file
 .idea
 
+# vscode
+.vscode
+
 # Node
 node_modules/

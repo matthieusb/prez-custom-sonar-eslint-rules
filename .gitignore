@@ -1,7 +1,13 @@
 # Maven
 target/
 
+# Eclipse
+.classpath
+.project
+.settings
+
 # Jetbrains file
 .idea
-Supprimerait .gitignore
-Supprimerait sonar/java-custom-rules/
+
+# Node
+node_modules/

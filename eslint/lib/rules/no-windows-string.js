@@ -12,7 +12,7 @@ module.exports = {
     meta: {
         docs: {
             description: "Interdire de parler de Windows",
-            category: "Fill me in",
+            category: "Syntax",
             recommended: false
         },
         fixable: null,  // or "code" or "whitespace"
@@ -22,6 +22,7 @@ module.exports = {
     },
 
     create: function(context) {
+        const FAILURE_MSG = 'Le terme windows est interdit';
 
         // variables should be defined here
 
@@ -36,9 +37,11 @@ module.exports = {
         //----------------------------------------------------------------------
 
         return {
-
-            // give me methods
-
+            VariableDeclarator(node) {
+                if (node.init && node.init.type === 'Literal' && node.init.value.includes('windows')) {
+                    context.report(node, FAILURE_MSG);
+                }
+            }
         };
     }
 };

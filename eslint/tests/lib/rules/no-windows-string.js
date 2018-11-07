@@ -30,8 +30,10 @@ var ruleTester = new RuleTester();
 ruleTester.run("no-windows-string", rule, {
 
     valid: [
-
-        // give me some code that won't trigger a warning
+        {
+            code: 'const anotherTest = "linux est le seul vrai os"',
+            filename: 'test.js'
+        }
     ],
 
     invalid: [

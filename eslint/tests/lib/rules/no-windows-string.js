@@ -40,8 +40,8 @@ ruleTester.run("no-windows-string", rule, {
         {
             code: "const test = \"windows c'est bien\"",
             errors: [{
-                message: "Fill me in.",
-                type: "Me too"
+                message: "Le terme windows est interdit",
+                type: "VariableDeclarator"
             }]
         }
     ]

@@ -11,6 +11,16 @@
 var rule = require("../../../lib/rules/no-windows-string"),
 RuleTester = require("eslint").RuleTester;
 
+RuleTester.setDefaultConfig({
+    parserOptions: {
+      ecmaVersion: 6,
+      sourceType: 'module',
+  
+      ecmaFeatures: {
+        modules: true,
+      },
+    },
+});
 
 //------------------------------------------------------------------------------
 // Tests
